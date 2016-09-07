@@ -1,0 +1,89 @@
+<html>
+<head><title>Madhu</title>
+<link rel="stylesheet" type="text/css" href="Calculator.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+<script type="text/javascript">
+function cals(buttonValue) 
+{
+if (buttonValue == '        CLEAR        ') 
+{
+   document.getElementById('valueshow').value = '0';
+}
+else
+  {
+    if(document.getElementById('valueshow').value == '0') 
+ {
+  
+   document.getElementById('valueshow').value = buttonValue;
+}
+  
+  else
+   {
+    
+    document.getElementById('valueshow').value += buttonValue;
+   }
+  }
+ }
+  function cal(equation)  
+   
+  {
+  var answer = eval(equation);
+document.getElementById('valueshow2').value = answer;
+ }
+ </script>
+</head>
+<div align="center">
+<form style="width: auto;" onsubmit="javascript:cal(document.getElementById('valueshow').value);return false;">
+<table cellspacing="0" align="center" border="0">
+<tbody>
+<tr>
+<td colspan="4" style="color: #7e75f3;display : table-cell;
+    vertical-align: right;
+    margin : 0;
+    padding : 0;border:1px solid white;background-color: #7e75f3;"><input id="valueshow2" type="text" value="" /></td>
+</tr>
+<tr align="right">
+<!--<th><input class="bgclear" onclick="cals(this.value);" type="button" value="C" /></th>-->
+<!--<td colspan="2"><input class="bgclear" onclick="cals(this.value);" type="button" value="C" /></td>-->
+<td colspan="2" style="color: #FFFFFF;display : table-cell;
+    vertical-align: middle;
+    margin : 0;
+    padding-left : 10px;padding-right:60px;border:none;background-color: #FFFFFF;"><input class="bgclear" onclick="cals(this.value);" type="button" value="        CLEAR        " /></td>
+
+<td colspan="2" style="display : table-cell;
+    vertical-align: middle;
+    margin : 0;
+    padding : 0;border:none;padding-left: 2%;font-size:36px;background-color: #FFFFFF;"><input id="valueshow" type="text" value="0" /></td>
+
+</tr>
+<tr>
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="7" />
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="8" />
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="9" />
+<td><input class="bgoperationcolor" onclick="cals(this.value);" type="button" value="/" />
+</tr>
+<tr>
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="4" />
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="5" />
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="6" />
+<td><input class="bgoperationcolor" onclick="cals('*');" type="button" value="x" />
+</tr>
+<tr>
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="1" />
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="2" />
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="3" />
+<td><input class="bgoperationcolor" onclick="cals(this.value);" type="button" value="-" />
+</tr>
+<tr>
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="." />
+<td><input class="bgcolornumber" onclick="cals(this.value);" type="button" value="0" />
+<td><input class="equal" onclick="cal(document.getElementById('valueshow').value);" type="button" value="=" />
+<td><input class="bgoperationcolor" onclick="cals(this.value);" type="button" value="+" />
+</tr>
+<tr>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>

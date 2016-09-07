@@ -1,0 +1,192 @@
+div {
+    width: 500px;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+table {
+    width: 100%;
+    border: none;
+    //box-shadow: 0 0 1px 1px #f1f1f1;
+    //margin: 0 10px 10px 10px; 
+    border-collapse: collapse;
+    
+}
+
+table td {
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    //border-left: 1px solid #FFFFFF;
+    //border-right: 1px solid #FFFFFF;
+   // border: thin single white collapse
+}
+table tr {
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    //border-top: 1px solid #FFFFFF;
+    //border-bottom: 1px solid #FFFFFF;
+}
+
+td, th {
+    //border: 1px solid white;
+    border-spacing: 0;
+}
+
+
+
+.bgcolornumber {
+    border: 1px solid white;
+    width: 100%;
+    padding: 1px;
+    font-family: Quicksand;
+    font-size: 26px;
+    font-style: normal;
+    outline: none;
+    height: 90px;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #3d4354;
+    color: #f9f9f9;
+    margin:0 .2% .2% 0;
+}
+
+.bgoperationcolor{
+    border: 1px solid white;
+    width: 100%;
+    padding: 1px;
+    font-family: Quicksand;
+    font-size: 26px;
+    font-style: normal;
+    outline: none;
+    height: 90px;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #3d4354;
+    color: #f9f9f9;
+    margin:0 .2% .2% 0;
+
+}
+.equal{
+    border: 1px solid white;
+    width: 100%;
+    padding: 1px;
+    font-family: Quicksand;
+    font-size: 26px;
+    font-style: normal;
+    outline: none;
+    height: 90px;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #3d4354;
+    color: #f9f9f9;
+    margin:0 .4% .4% 0;
+}
+
+
+
+#valueshow{
+    border: none;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 36px;
+    font-family: Quicksand;
+    outline: none;
+    font-weight: Regular;
+    color: #555;
+    text-align:right;
+}
+
+#valueshow2{
+    border: none;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 125px;
+    font-family: Quicksand; 
+    outline: none;
+    font-weight: normal;
+    color: #f9f9f9;
+    background-color: #7e75f3;
+    text-align:right;
+    
+}    
+
+.bgclear{
+    //border: 1px solid white;
+    width: 100%;
+    padding: 1px;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-style: normal;
+    outline: none;
+    height: 90px;
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #3d4354;
+    color: #f9f9f9;
+    margin:0 .4% .4% 0; 
+}
+
+
+
+ 
+//.bgcolornumber class is use for all button number buttons (0-9)
+.bgcolornumber {
+    background-color: #f1f1f1;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+.bgclear {
+    background: #50d14e;
+    color: #f9f9f9;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-style: normal;
+    transition: all 0.3s ease-in-out;
+}
+ 
+//.bgoperationcolor is use for all operation buttons (+,-,*,/)
+.bgopeationcolor {
+    background-color: #663399;
+    color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+.equal {
+    //background-color: #66CC33;
+    color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+.bgcolornumber:hover {
+    background-color: #222;
+    color: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+}
+.bgclear:hover {
+    background-color: #FF0000;
+    color: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+}
+.bgoperationcolor:hover {
+    background-color: #0033CC;
+    color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+.equal:hover {
+    background-color: #0033CC;
+    transition: all 0.3s ease-in-out;
+}
+input[type="text"]:active {  
+font-size: 75px;
+}
+
+html {
+	height: 100%;
+	background: #181e29;
+	background: radial-gradient(circle, #181e29 20%, #181e29);
+	background-size: cover;
+}
+
+
+
